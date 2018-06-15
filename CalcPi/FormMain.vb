@@ -38,7 +38,7 @@ Public Class FormMain
                                                                             LabelIter.Text = n.ToString("N0")
 
                                                                             LabelCalcPi.Text = " " + r.ToString("F14")
-                                                                            LabelPercent.Text = $"{(r / Math.PI * 100):F14}%"
+                                                                            LabelError.Text = $" {((1 - r / Math.PI) * 100):F14}%"
                                                                             LabelDif.Text = " " + (Math.Abs(r - Math.PI)).ToString("F21")
                                                                             LabelElapsed.Text = $"{sw.Elapsed.Hours:00}h : {sw.Elapsed.Minutes:00}m : {sw.Elapsed.Seconds:00}s : {sw.Elapsed.Milliseconds:000}ms"
                                                                         End Sub))
